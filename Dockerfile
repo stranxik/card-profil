@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci
+RUN npm install --frozen-lockfile
 
 # Copy source code
 COPY . .
@@ -17,16 +17,23 @@ COPY . .
 RUN npm run build
 
 # Production stage
-FROM nginx:alpine
+FROM node:20-alpine AS production
 
-# Copy built assets from build stage
-COPY --from=build /app/dist /usr/share/nginx/html
+# Set working directory
+WORKDIR /app
 
-# Copy nginx configuration if you have custom config
-# COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Copy built files and package files
+COPY --from=build /app/dist ./dist
+COPY --from=build /app/package*.json ./
 
-# Expose port 80
-EXPOSE 80
+# Install production dependencies only
+RUN npm install --only=production
 
-# Start nginx
-CMD ["nginx", "-g", "daemon off;"] 
+# Install serve to run the static files
+RUN npm install -g serve
+
+# Expose port 3000
+EXPOSE 3000
+
+# Start the app
+CMD ["serve", "-s", "dist", "-l", "3000"] 
