@@ -16,10 +16,10 @@ const socialLinks = links.filter(link =>
 export default function LinksPage() {
   const getIcon = (title: string) => {
     switch (title.toLowerCase()) {
-      case 'github':
-        return <GithubIcon className="w-5 h-5" />;
       case 'linkedin':
         return <LinkedinIcon className="w-5 h-5" />;
+      case 'github':
+        return <GithubIcon className="w-5 h-5" />;
       case 'contact':
         return <MailIcon className="w-5 h-5" />;
       case 'threads':
@@ -76,7 +76,7 @@ export default function LinksPage() {
               Thibault Souris
             </h1>
             <p className="text-white/80">
-              Product Manager | IA • SaaS
+              Product Manager | IA & Automatisation
             </p>
           </div>
 

@@ -22,14 +22,14 @@ export const links: Link[] = [
     description: "Boilerplate optimisé pour l'éditeur IA Cursor"
   },
   {
-    title: "GitHub",
-    href: "https://github.com/stranxik",
-    description: "Découvrez mes projets open source"
-  },
-  {
     title: "LinkedIn",
     href: "https://www.linkedin.com/in/thibault-souris/",
     description: "Mon parcours professionnel"
+  },
+  {
+    title: "GitHub",
+    href: "https://github.com/stranxik",
+    description: "Découvrez mes projets open source"
   },
   {
     title: "Threads",
