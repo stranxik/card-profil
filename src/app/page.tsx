@@ -30,7 +30,7 @@ export default function LinksPage() {
   };
 
   return (
-    <main className="h-screen bg-black dotted-background p-4 md:p-8 flex items-center justify-center overflow-hidden home-page">
+    <main className="min-h-screen bg-black dotted-background p-4 md:p-8 flex items-center justify-center overflow-y-auto home-page">
       <>
         {/* Desktop CV Link */}
         <Link 
@@ -49,7 +49,7 @@ export default function LinksPage() {
         {/* Mobile CV Link */}
         <Link 
           to="/cv" 
-          className="fixed left-4 bottom-8 block md:hidden"
+          className="absolute left-4 bottom-8 block md:hidden"
         >
           <Card className="border-neutral-800 bg-black hover:bg-neutral-900/50 transition-colors">
             <CardContent className="p-4 flex items-center justify-center">
@@ -61,7 +61,7 @@ export default function LinksPage() {
         </Link>
       </>
 
-      <div className="w-full max-w-2xl space-y-6">
+      <div className="w-full max-w-2xl space-y-6 pb-24">
         {/* Header */}
         <div className="text-center space-y-4">
           <div className="w-28 h-28 mx-auto rounded-full bg-black profile-ring overflow-hidden">
@@ -113,7 +113,7 @@ export default function LinksPage() {
                     {link.title}
                   </h3>
                   {link.description && (
-                    <p className="text-white/60 mt-1">
+                    <p className="text-white/60 mt-1 line-clamp-2 text-sm">
                       {link.description}
                     </p>
                   )}
