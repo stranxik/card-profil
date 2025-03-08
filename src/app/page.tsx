@@ -29,7 +29,7 @@ export default function LinksPage() {
   return (
     <main className="flex flex-col min-h-screen bg-black">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center border-y border-neutral-800 overflow-hidden">
+      <section className="relative min-h-screen lg:h-screen flex items-center border-y border-neutral-800 overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-5 pointer-events-none" />
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-primary/5" />
@@ -37,10 +37,10 @@ export default function LinksPage() {
           <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
         </div>
 
-        <div className="w-full h-full flex items-center">
-          <div className="w-full grid grid-cols-1 lg:grid-cols-2 items-stretch gap-6 sm:gap-8 lg:gap-12 px-4 sm:px-8 md:px-12 lg:px-20">
+        <div className="w-full h-full flex items-center py-8 lg:py-0">
+          <div className="w-full grid grid-cols-1 lg:grid-cols-2 items-stretch gap-4 lg:gap-12 px-4 lg:px-20">
             <div className="flex flex-col">
-              <div className="relative p-6 rounded-xl border border-neutral-800 bg-black/90 backdrop-blur-sm h-full">
+              <div className="relative p-4 lg:p-6 rounded-xl border border-neutral-800 bg-black/90 backdrop-blur-sm h-full">
                 <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent rounded-xl" />
                 <div className="relative space-y-6">
                   <div className="space-y-2">
@@ -140,9 +140,9 @@ export default function LinksPage() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-4 lg:gap-8">
               {/* Projets Principaux */}
-              <div className="relative p-6 rounded-xl border border-neutral-800 bg-black/90 backdrop-blur-sm flex-1">
+              <div className="relative p-4 lg:p-6 rounded-xl border border-neutral-800 bg-black/90 backdrop-blur-sm flex-1">
                 <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent rounded-xl" />
                 <div className="relative space-y-4">
                   <h2 className="text-white/80 text-sm font-medium tracking-wider">Projets principaux</h2>
@@ -176,7 +176,7 @@ export default function LinksPage() {
 
               {/* Autres Projets */}
               {otherProjects.length > 0 && (
-                <div className="relative p-6 rounded-xl border border-neutral-800 bg-black/90 backdrop-blur-sm flex-1">
+                <div className="relative p-4 lg:p-6 rounded-xl border border-neutral-800 bg-black/90 backdrop-blur-sm flex-1">
                   <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent rounded-xl" />
                   <div className="relative space-y-4">
                     <h2 className="text-white/80 text-sm font-medium tracking-wider">Autres projets</h2>
