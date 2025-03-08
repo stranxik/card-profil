@@ -3,18 +3,26 @@ interface Link {
   href: string;
   description?: string;
   icon?: string;
+  isMainProject?: boolean;
 }
 
 export const links: Link[] = [
   {
+    title: "Flowz",
+    href: "https://flowz.cc",
+    description: "Plateforme de gestion de données intelligente, propulsée par l'IA et les workflows automatisés",
+    isMainProject: true
+  },
+  {
+    title: "Passerelle",
+    href: "https://passerelle.cc",
+    description: "Solution IA pour les organismes de formation - Automatisation et optimisation des processus",
+    isMainProject: true
+  },
+  {
     title: "Moveto",
     href: "https://moveto.fr",
     description: "Studio de création Web3 & IA - Innovation numérique"
-  },
-  {
-    title: "Flowz",
-    href: "https://flowz.cc",
-    description: "Plateforme de gestion de données intelligente, propulsée par l'IA et les workflows automatisés"
   },
   {
     title: "Cursor Template",
@@ -32,13 +40,8 @@ export const links: Link[] = [
     description: "Découvrez mes projets open source"
   },
   {
-    title: "Threads",
-    href: "https://www.threads.net/@cestjustedelacom",
-    description: "Suivez mon actualité"
-  },
-  {
-    title: "Contact",
-    href: "mailto:thibaultsouris@moveto.fr",
-    description: "thibaultsouris@moveto.fr"
+    title: "Prendre RDV",
+    href: "https://dub.sh/umKDeIX",
+    description: "Planifier un rendez-vous en visio"
   }
 ]; 

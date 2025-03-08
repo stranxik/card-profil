@@ -206,4 +206,62 @@
 /* Nouvelle classe pour la page d'accueil */
 .home-page {
   @apply overflow-hidden;
+}
+
+/* Grid Pattern Background */
+.bg-grid-pattern {
+  background-size: 100px 100px;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-position: top center;
+  image-rendering: pixelated;
+}
+
+/* Styles d'impression pour le CV */
+@media print {
+  /* Cacher les éléments non nécessaires */
+  .fixed {
+    display: none !important;
+  }
+  
+  /* Ajuster les couleurs pour l'impression */
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  /* Assurer que tout le contenu est visible */
+  .min-h-screen {
+    min-height: 0 !important;
+  }
+  
+  /* Optimiser les marges et le padding */
+  .p-5, .p-4 {
+    padding: 1rem !important;
+  }
+  
+  /* Ajuster les couleurs du texte pour une meilleure lisibilité */
+  .text-white, .text-white\/80, .text-white\/60, .text-white\/40 {
+    color: black !important;
+  }
+  
+  /* Optimiser les bordures */
+  .border-neutral-800 {
+    border-color: #ddd !important;
+  }
+  
+  /* Supprimer les effets visuels */
+  .bg-grid-pattern, .bg-gradient-to-r, .bg-gradient-to-b {
+    display: none !important;
+  }
+  
+  /* Assurer que les cartes sont bien visibles */
+  .backdrop-blur-sm {
+    backdrop-filter: none !important;
+  }
+  
+  .bg-black\/90 {
+    background: white !important;
+  }
 } 
