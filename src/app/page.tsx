@@ -129,7 +129,7 @@ export default function LinksPage() {
                         , une plateforme d'automatisation intelligente.
                       </p>
                       <p className="text-white/80 text-sm leading-relaxed">
-                        Spécialisé en Product Management et architectures RAG (Retrieval Augmented Generation), je conçois des solutions innovantes qui transforment les données en insights actionnables. Mon approche unique permet de déployer rapidement des solutions verticales complètes pour différents secteurs d'activité.
+                        Spécialisé en Product Management et architectures RAG (Retrieval Augmented Generation), je conçois des solutions qui transforment les données en insights actionnables. Mon approche permet de déployer rapidement des solutions verticales complètes pour différents secteurs d'activité.
                       </p>
                       <p className="text-white/60 text-sm">
                         📅 Disponible pour des missions de conseil en stratégie produit et transformation digitale.
