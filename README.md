@@ -48,7 +48,7 @@ docker run -p 80:80 thibaultsouris-website
 
 ## Déploiement
 
-Le site est déployé sur : https://thibaultsouris-card.moveto.fr
+Le site est déployé sur : https://thibaultsouris.fr
 
 ## Auteur
 
